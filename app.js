@@ -68,5 +68,6 @@ app.use(errorHandler);
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
 	reconnect_session();
+	console.log(`Server is listening on port ${PORT}`);
 	debug(`Server is listening on port ${PORT}`);
 });
